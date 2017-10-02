@@ -34,7 +34,7 @@ public class MainActivity extends AppCompatActivity implements DefaultHardwareBa
 
     setContentView(R.layout.activity_main);
     mReactRootView = new ReactRootView(this);
-    
+
     ((FrameLayout)findViewById(R.id.reactContainer)).addView(mReactRootView);
     mReactInstanceManager = ReactInstanceManager.builder()
         .setApplication(getApplication())

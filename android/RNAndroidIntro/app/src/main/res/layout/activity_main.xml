@@ -20,6 +20,4 @@
       android:text="Android Text View"
       android:gravity="center"
       android:background="#76C176"/>
-
-
 </LinearLayout>
