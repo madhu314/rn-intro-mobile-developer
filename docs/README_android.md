@@ -1,4 +1,4 @@
-###### Where does React Native fit?
+### Where does React Native fit?
 
 Roughly put android application ui follows this hierarchy.
 
@@ -36,8 +36,21 @@ Application is a collection of screens and transitions among those screens. In a
 
 React Native provides `ReactRootView` which provides android java code with an entry point into React Native world. [`ReactRootView`](https://github.com/facebook/react-native/blob/1e8f3b11027fe0a7514b4fc97d0798d3c64bc895/ReactAndroid/src/main/java/com/facebook/react/ReactRootView.java) eventually inherits from `FrameLayout`, thus its like any other android view. Where ever a view can be used in android, we can use `ReactRootView` and run JavaScript code.
 
-###### Overview
+### Overview
 The basic idea here is simple. We will split the screen into two parts, one part is rendered by pure android code and another part will be rendered by JavaScript through react-native.
+
+For impatient, here is the quick guide. For others, interested in the detailed guide, skip Quickstart and go to Detailed Guide section.
+
+### Quickstart
+1.  Go to this [guide](https://facebook.github.io/react-native/docs/getting-started.html) and install `node`, `watchman` and `react-native-cli`.
+2. Clone the repo
+3. cd to rn directory and run `npm install`
+4. Run the packager with command `npm start` in `rn` directory
+5. cd to android directory and open the android project in Android Studio
+6. Run the application
+
+
+### Detailed Guide
 
 ###### Android Setup
 1. create directory `rn-intro-mobile-developer` in a directory of your choice. Then create two additional directories `rn` and `android` inside this new directory.
@@ -120,7 +133,7 @@ npm install
 ```
 
 ###### React Hello Component
-In `rn` directory create `src` directory. Create a new file called `HelloWorld.js` with the following contents
+In `rn` directory create `src` directory. In `src` directory, create a new file called `HelloWorld.js` with the following contents
 
 ```JavaScript
 import React from "react";
@@ -390,3 +403,9 @@ mReactRootView.startReactApplication(mReactInstanceManager, "SayHello", null);
 The above snippet is the crux of the integration. A `ReactRootView` is created and is added as the child of the container created in android xml. A react instance manager is created to manage JavaScript bridge. By passing `index.android` we are telling the bridge to initialize from the `index.android.js` file that is available in `rn` directory. `index.android.bundle` is used when the application is in release mode and the file is packaged as part of the apk.
 
 Application is started in the `ReactRootView` with given bridge instance. Name of the component to be rendered is also provided as the second argument, which , in this case is `SayHello`. `SayHello` is already available in `AppRegistry`, when the bridge initialized with `index.android.js`. The last argument is an android bundle that gets converted into component props.
+
+Sometimes, JavaScript needs to handle back button hardware. It is provided, by implementing `DefaultHardwareBackBtnHandler` interface.
+
+React Native needs to know when the application is paused, resumed, destroyed, we do this by forwarding activity life cycle methods to react native instance manager.
+
+React native comes with handy dev tools to do bunch of things like, reloading the javascript bundle, hot reloading changes on save, performance monitoring etc. For this it will need window overlay permissions, we ensure that it is given with a little code snippet that directs user to permission settings screen. Finally we wire up `Ctrl + M` or `cmd + M` to bring dev menu.
