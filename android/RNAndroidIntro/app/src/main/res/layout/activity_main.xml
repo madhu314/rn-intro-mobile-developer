@@ -10,7 +10,7 @@
   <FrameLayout android:layout_width="match_parent" android:layout_height="0dp"
       android:layout_weight="0.4"
       android:background="#FFA2AC"
-      android:id="@+id/reactContainer1">
+      android:id="@+id/reactContainer">
 
   </FrameLayout>
   <TextView

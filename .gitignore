@@ -6,3 +6,4 @@
 */**/build
 */**/captures
 */*.externalNativeBuild
+rn/node_modules
