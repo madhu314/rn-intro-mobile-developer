@@ -7,3 +7,4 @@
 */**/captures
 */*.externalNativeBuild
 rn/node_modules
+ios/RNiOS/Pods
