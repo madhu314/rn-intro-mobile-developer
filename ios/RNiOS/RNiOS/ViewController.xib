@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="12121" systemVersion="16F73" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12089"/>
+        <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="ViewController" customModule="RNiOS" customModuleProvider="target">
+            <connections>
+                <outlet property="reactContainer" destination="k17-f8-mLw" id="gDh-pw-xtr"/>
+                <outlet property="view" destination="qDb-Zk-11k" id="Ts4-Er-2DI"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="qDb-Zk-11k">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="k17-f8-mLw" userLabel="reactContainer">
+                    <rect key="frame" x="0.0" y="0.0" width="375" height="267"/>
+                    <color key="backgroundColor" red="1" green="0.63529411764705879" blue="0.67450980392156867" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                </view>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="wtO-eD-zv2" userLabel="nativeContainer">
+                    <rect key="frame" x="0.0" y="267" width="375" height="400"/>
+                    <subviews>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Text from iOS" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Dk8-cG-bEJ">
+                            <rect key="frame" x="135" y="189.5" width="104" height="21"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                            <nil key="textColor"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                    </subviews>
+                    <color key="backgroundColor" red="0.46274509803921571" green="0.75686274509803919" blue="0.46274509803921571" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstItem="Dk8-cG-bEJ" firstAttribute="centerY" secondItem="wtO-eD-zv2" secondAttribute="centerY" id="51b-Xa-yQ5"/>
+                        <constraint firstItem="Dk8-cG-bEJ" firstAttribute="centerX" secondItem="wtO-eD-zv2" secondAttribute="centerX" id="8u2-cL-5PR"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="wtO-eD-zv2" secondAttribute="trailing" id="0vI-IX-TH1"/>
+                <constraint firstAttribute="trailing" secondItem="k17-f8-mLw" secondAttribute="trailing" id="90P-PM-eJJ"/>
+                <constraint firstItem="wtO-eD-zv2" firstAttribute="leading" secondItem="qDb-Zk-11k" secondAttribute="leading" id="MTv-0U-nce"/>
+                <constraint firstItem="k17-f8-mLw" firstAttribute="top" secondItem="qDb-Zk-11k" secondAttribute="top" id="NxV-1P-TKg"/>
+                <constraint firstAttribute="bottom" secondItem="wtO-eD-zv2" secondAttribute="bottom" id="OfS-b2-DJg"/>
+                <constraint firstItem="k17-f8-mLw" firstAttribute="leading" secondItem="qDb-Zk-11k" secondAttribute="leading" id="Q4b-UH-vEs"/>
+                <constraint firstItem="wtO-eD-zv2" firstAttribute="top" secondItem="k17-f8-mLw" secondAttribute="bottom" id="RbG-Zb-JDs"/>
+                <constraint firstItem="k17-f8-mLw" firstAttribute="height" secondItem="qDb-Zk-11k" secondAttribute="height" multiplier="0.4" id="V9p-fH-EWl"/>
+            </constraints>
+            <point key="canvasLocation" x="-124" y="13"/>
+        </view>
+    </objects>
+</document>

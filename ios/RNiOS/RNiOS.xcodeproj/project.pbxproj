@@ -15,6 +15,7 @@
 		C225ED6C1F8355970046DF8C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C225ED6A1F8355970046DF8C /* LaunchScreen.storyboard */; };
 		C225ED771F8355970046DF8C /* RNiOSTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C225ED761F8355970046DF8C /* RNiOSTests.swift */; };
 		C225ED821F8355970046DF8C /* RNiOSUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C225ED811F8355970046DF8C /* RNiOSUITests.swift */; };
+		C225ED901F8362040046DF8C /* ViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = C225ED8F1F8362040046DF8C /* ViewController.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +52,7 @@
 		C225ED7D1F8355970046DF8C /* RNiOSUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RNiOSUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		C225ED811F8355970046DF8C /* RNiOSUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RNiOSUITests.swift; sourceTree = "<group>"; };
 		C225ED831F8355970046DF8C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C225ED8F1F8362040046DF8C /* ViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ViewController.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -90,12 +92,12 @@
 		C225ED521F8355960046DF8C = {
 			isa = PBXGroup;
 			children = (
+				65DBD3A34F0D43C4E755AA49 /* Frameworks */,
+				FD283D9C23A679C632F21A8E /* Pods */,
 				C225ED5C1F8355970046DF8C /* Products */,
 				C225ED5D1F8355970046DF8C /* RNiOS */,
 				C225ED751F8355970046DF8C /* RNiOSTests */,
 				C225ED801F8355970046DF8C /* RNiOSUITests */,
-				FD283D9C23A679C632F21A8E /* Pods */,
-				65DBD3A34F0D43C4E755AA49 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -118,6 +120,7 @@
 				C225ED6A1F8355970046DF8C /* LaunchScreen.storyboard */,
 				C225ED651F8355970046DF8C /* RNiOS.xcdatamodeld */,
 				C225ED601F8355970046DF8C /* ViewController.swift */,
+				C225ED8F1F8362040046DF8C /* ViewController.xib */,
 			);
 			path = RNiOS;
 			sourceTree = "<group>";
@@ -263,6 +266,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				C225ED6C1F8355970046DF8C /* LaunchScreen.storyboard in Resources */,
+				C225ED901F8362040046DF8C /* ViewController.xib in Resources */,
 				C225ED691F8355970046DF8C /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

@@ -409,3 +409,10 @@ Sometimes, JavaScript needs to handle back button hardware. It is provided, by i
 React Native needs to know when the application is paused, resumed, destroyed, we do this by forwarding activity life cycle methods to react native instance manager.
 
 React native comes with handy dev tools to do bunch of things like, reloading the javascript bundle, hot reloading changes on save, performance monitoring etc. For this it will need window overlay permissions, we ensure that it is given with a little code snippet that directs user to permission settings screen. Finally we wire up `Ctrl + M` or `cmd + M` to bring dev menu.
+
+###### Common Patterns
+- Using a singleton instance of react instance manager
+- Using bundle to pass props to components
+- Using common React Native activity that can be started from anywhere in the app with a pointer to screen
+- Common resources like database, shared preferences are exposed with native modules
+- Communicating to JavaScript from native via event emitters

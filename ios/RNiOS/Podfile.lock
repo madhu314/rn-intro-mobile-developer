@@ -1,12 +1,86 @@
 PODS:
-  - SwiftLint (0.21.0)
+  - boost (1.59.0):
+    - boost/graph-includes (= 1.59.0)
+    - boost/math-includes (= 1.59.0)
+    - boost/numeric-includes (= 1.59.0)
+    - boost/pointer_cast-includes (= 1.59.0)
+    - boost/preprocessor-includes (= 1.59.0)
+    - boost/shared_ptr-includes (= 1.59.0)
+    - boost/string_algorithms-includes (= 1.59.0)
+  - boost/graph-includes (1.59.0)
+  - boost/math-includes (1.59.0)
+  - boost/numeric-includes (1.59.0)
+  - boost/pointer_cast-includes (1.59.0)
+  - boost/preprocessor-includes (1.59.0)
+  - boost/shared_ptr-includes (1.59.0)
+  - boost/string_algorithms-includes (1.59.0)
+  - DoubleConversion (1.1.5)
+  - Folly (2016.09.26.00):
+    - boost
+    - DoubleConversion
+    - GLog
+  - GLog (0.3.4)
+  - React/Core (0.48.4):
+    - Yoga (= 0.48.4.React)
+  - React/CxxBridge (0.48.4):
+    - Folly (= 2016.09.26.00)
+    - React/Core
+    - React/cxxreact
+  - React/cxxreact (0.48.4):
+    - boost
+    - Folly (= 2016.09.26.00)
+    - React/jschelpers
+  - React/DevSupport (0.48.4):
+    - React/Core
+    - React/RCTWebSocket
+  - React/jschelpers (0.48.4):
+    - Folly (= 2016.09.26.00)
+  - React/RCTBlob (0.48.4):
+    - React/Core
+  - React/RCTNetwork (0.48.4):
+    - React/Core
+  - React/RCTText (0.48.4):
+    - React/Core
+  - React/RCTWebSocket (0.48.4):
+    - React/Core
+    - React/RCTBlob
+  - SwiftLint (0.22.0)
+  - Yoga (0.48.4.React)
 
 DEPENDENCIES:
+  - DoubleConversion (from `../../rn/node_modules/react-native/third-party-podspecs/DoubleConversion.podspec`)
+  - Folly (from `../../rn/node_modules/react-native/third-party-podspecs/Folly.podspec`)
+  - GLog (from `../../rn/node_modules/react-native/third-party-podspecs/GLog.podspec`)
+  - React/Core (from `../../rn/node_modules/react-native`)
+  - React/CxxBridge (from `../../rn/node_modules/react-native`)
+  - React/DevSupport (from `../../rn/node_modules/react-native`)
+  - React/RCTNetwork (from `../../rn/node_modules/react-native`)
+  - React/RCTText (from `../../rn/node_modules/react-native`)
+  - React/RCTWebSocket (from `../../rn/node_modules/react-native`)
   - SwiftLint
+  - Yoga (from `../../rn/node_modules/react-native/ReactCommon/yoga`)
+
+EXTERNAL SOURCES:
+  DoubleConversion:
+    :podspec: "../../rn/node_modules/react-native/third-party-podspecs/DoubleConversion.podspec"
+  Folly:
+    :podspec: "../../rn/node_modules/react-native/third-party-podspecs/Folly.podspec"
+  GLog:
+    :podspec: "../../rn/node_modules/react-native/third-party-podspecs/GLog.podspec"
+  React:
+    :path: "../../rn/node_modules/react-native"
+  Yoga:
+    :path: "../../rn/node_modules/react-native/ReactCommon/yoga"
 
 SPEC CHECKSUMS:
-  SwiftLint: 6de8b2d15f43c482bdec2953b8cfd696faa876e8
+  boost: 30a15ffb6d9aa4646dd3caffc960753f4cb4ca4e
+  DoubleConversion: ebb6747c5b66026ad4f97b789c3ceac6f18e57a6
+  Folly: b7255b29f1d693c375d642d0f04f0592181156d9
+  GLog: 3e4e4ae9746ce6bf6e9420c7fc1e08ad59c8ba1a
+  React: 6d68659481a8a56e0f6b3dbecd984d5b9bb2d6c5
+  SwiftLint: 1134786caedd2caab0560d2f36b76414a5a56808
+  Yoga: ccefa1454b2e9825dce3b2df98088b7f0e3c2675
 
-PODFILE CHECKSUM: 8d04dd4e183d1c935852a6fcba5704f06888e4eb
+PODFILE CHECKSUM: fb4ee34ae7770ab6ec837858a38efec417f9d641
 
 COCOAPODS: 1.2.0
