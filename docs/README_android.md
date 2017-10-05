@@ -411,4 +411,4 @@ React Native needs to know when the application is paused, resumed, destroyed, w
 React native comes with handy dev tools to do bunch of things like, reloading the javascript bundle, hot reloading changes on save, performance monitoring etc. For this it will need window overlay permissions, we ensure that it is given with a little code snippet that directs user to permission settings screen. Finally we wire up `Ctrl + M` or `cmd + M` to bring dev menu and experiment.
 
 If you have come to this point, Congratulations. Now you know how JavaScript code ui code in JavaScript is shown as android views.
-See [README]("../README.md") for tips and tricks on advanced usage and further learning.
+See [README](../README.md) for tips and tricks on advanced usage and further learning.

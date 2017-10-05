@@ -276,4 +276,4 @@ Name of the component to be rendered is provided as the module name argument, wh
 React native comes with handy dev tools to do bunch of things like, reloading the javascript bundle, hot reloading changes on save, performance monitoring etc. Use `cmd + D` to bring dev menu & experiment.
 
 If you have come to this point, Congratulations. Now you know how JavaScript code ui code in JavaScript is shown as iOS views.
-See [README]("../README.md") for tips and tricks on advanced usage and further learning.
+See [README](../README.md) for tips and tricks on advanced usage and further learning.
