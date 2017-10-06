@@ -1,4 +1,4 @@
-React Native is a fantastic technology that is quickly becoming popular and changing fundamentally how companies build mobile applications and share common code across mobile/ web platforms.
+React Native is a fantastic technology that is quickly becoming popular and is fundamentally changing how companies build mobile applications and share common code across mobile/ web platforms.
 
 This article is mainly targeted for the following readers
 1. Reader is already a native android/ios developer.
@@ -8,7 +8,7 @@ Note that this is just a demonstration of certain concepts. Code used here is no
 
 ###### Objective
 You will notice that most of the steps followed in this repo are similar to what is mentioned in official documentations integration [guide](https://facebook.github.io/react-native/docs/integration-with-existing-apps.html).
-However the main objective here is to present the fact that react native is view based when it comes to integration into native code, react native should be viewed as a special view that can convert JavaScript UI code into your native view.
+However the main objective here is to present the fact that react native is view based. When it comes to integration into native code, react native should be thought of as a special view that can convert JavaScript UI code into your native view.
 
 Demonstration follows a native screen divided into two parts; one rendered by native code and another by JavaScript.
 
