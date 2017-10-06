@@ -27,12 +27,12 @@ Application
 │           └───View   
 ```
 
-Application is a collection of screens and transitions among those screens. In ios we use a ViewController to represent a screen that covers complete screen. All the views are subsequently added as child elements to root view of the ViewController.
+Application is a collection of screens and transitions among those screens. In ios we use a UIViewController to represent a screen that covers complete screen. All the views are subsequently added as child elements to root view of the UIViewController.
 
 React Native provides `RCTRootView` which provides ios native code with an entry point into React Native world. `RCTRootView` inherits from `UIView`, thus its like any other ios view. Where ever `UIView` can be used in ios, we can use `RCTRootView` and run JavaScript code.
 
 ### Overview
-The basic idea here is simple. We will split the screen into two parts, one part is rendered by pure ios code and another part will be rendered by JavaScript through react-native.
+The basic idea here is simple. We will split the screen into two parts, one part is rendered by pure ios code and another part will be rendered by JavaScript through react native.
 
 For impatient, here is the quick guide. For others, interested in the detailed guide, skip Quickstart and go to Detailed Guide section.
 
@@ -62,7 +62,7 @@ mkdir ios
 
 - Get rid of storyboard configuration. In Project -> General, change main interface to LaunchScreen
 
-- Go to app delegate and add the following code
+- Go to app delegate and add the following code to applicationDidLaunch method
 
 ```swift
 self.window = UIWindow(frame: UIScreen.main.bounds)
@@ -70,7 +70,7 @@ self.window?.rootViewController = ViewController.newInstance()
 self.window?.makeKeyAndVisible()
 ```
 
-- Create `ViewController.xib` user interface file and wire it up with `ViewController.swift`. Make two container with 2:3 split. In the larger container, add a label ios label with text "text from ios". Sample ViewController code from this repo looks like this.
+- Create `ViewController.xib` user interface file and wire it up with `ViewController.swift`. Make two containers with 2:3 split. In the larger container, add a label ios label with text "text from ios". Sample ViewController code from this repo looks like this.
 
 ```swift
 import UIKit
